@@ -1,231 +1,251 @@
 *{
-    margin: 0%;
-    padding: 0%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-  }
+  margin: 0%;
+  padding: 0%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
 
 body{
-  background-color: #1e1e1e;
+background-color: #1e1e1e;
 }
 
 html {
-  scroll-behavior: smooth;
+scroll-behavior: smooth;
 }
 
 header nav{
-	position: relative;
-  text-align: center;
-	top: 0;
-	box-sizing: border-box;
-	width: 100%;
-	padding: 10px;
-	background-color: #1e1e1e;
+position: relative;
+text-align: center;
+top: 0;
+box-sizing: border-box;
+width: 100%;
+padding: 10px;
+background-color: #1e1e1e;
 }
 
 header a{
-    text-decoration: none;
-    margin: 8px;
-    font-size: 20px;
-    color: white;
-    transition: 0.3ms;
-    
-  }
+  text-decoration: none;
+  margin: 8px;
+  font-size: 20px;
+  color: white;
+  transition: 0.3ms;
+  
+}
 
 header a:hover{
-    border-bottom: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
 body, html {
-    height: 100%;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .bg-image{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-  }
+  height: 100%;
+}
 
-  .bg-image div{
-  
-    background-image: url("tlo.png");
-  
-  
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-  
-  
-    height: 110%;
-    
-    
-  
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  
-  .bg-text {
-    color: white;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-  }
-  .bg-text h1{
-    font-size: 45px;
-    
-  }
-  .bg-text p{
-    text-shadow: 2px 2px 4px rgba(100, 5, 240, 2);
-  }
+* {
+  box-sizing: border-box;
+}
 
-  main{
-    background-color: #1e1e1e;
-    color: white;
-  }
-  .git h3{
-    text-align: center;
-  }
-  .git{
-    
-    border-image: linear-gradient(to right, blue, aqua, white, violet);
-    border-image-slice: 1;
-    border-image-width: 5px;
-    background-color: #2c2c2c;
-    width: 40%;
-    padding: 13px;
-    margin-left: 29%;
-    margin-top: 15%;
-    
-  }
-  .git h3{
-    font-size: 35px;
-  }
-  .git p{
-    font-size: 25px;
-  }
-  .git a{
-    color: greenyellow;
-  }
+.bg-image{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
 
-  .about{
-    box-shadow: 
-                0 0 0 2px blue, 
-                0 0 0 3px aqua, 
-                0 0 0 4px white, 
-                0 0 0 5px violet, 
-                0 0 0 6px blue;
-                
-    background-color: #2c2c2c;
-    width: 52%;
-    padding: 13px;
-    margin-left: 24%;
-    margin-top: 15%;
-  }
+.bg-image div{
 
-  .about h3{
-    margin-left: 39% !important;
-    font-size: 35px;
-  }
+  background-image: url("tlo.png");
 
-  .about p{
-    font-size: 25px;
-  }
 
-  .programming{
-    box-shadow: 5px 5px 10px rgba(143, 75, 252, 0.5);
-    border-bottom: 1px solid violet;
-    border-right: 1px solid rgb(130, 130, 241);
-    border-top: 1px solid aqua;
-    border-left: 1px solid white;
-    
-    background-color: #2c2c2c;
-    width: 50%;
-    margin-left: 23%;
-    margin-top: 15%;
-    padding: 13px;
-    margin-bottom: 15%;
-  }
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+
+  height: 110%;
   
-  .programming h3{
-    margin-left: 39%;
-    font-size: 35px;
-  }
-
-  .programming p{
-    font-size: 25px;
-    text-align: left;
-  }
-
-  .contact{
-    padding: 1em 2em;
-   
-    box-shadow: 10px 10px 5px 10px rgba(227, 42, 252, 0.5);
-    border-bottom: 1px solid violet;
-    border-right: 1px solid rgb(130, 130, 241);
-    
-    border-radius: 1em;
-    
-   
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    font-size: 1.5rem;
-    
-   transition: 0.3ms;
-    
-    
-    background-color: #2c2c2c;
-    width: 50%;
-    margin-left: 23%;
-    margin-top: 15%;
-    padding: 13px;
-    margin-bottom: 15%;
-  }
-  .contact:hover{
-    box-shadow: 10px 10px 5px 10px rgba(33, 64, 206, 0.5);
-  }
   
-  .contact h3{
-    margin-left: 39%;
-    font-size: 35px;
-  }
-
-  .contact p{
-    font-size: 25px;
-    text-align: left;
-  }
-
-  .contact a{
-    color: greenyellow;
-  }
 
   
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav{
+  border-collapse: collapse;
+}
+
+
+.bg-text {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+.bg-text h1{
+  font-size: 45px;
   
+}
+.bg-text p{
+  text-shadow: 2px 2px 4px rgba(100, 5, 240, 2);
+}
+
+main{
+  background-color: #1e1e1e;
+  color: white;
+}
+.git h3{
+  text-align: center;
+}
+.git{
   
+  border-image: linear-gradient(to right, blue, aqua, white, violet);
+  border-image-slice: 1;
+  border-image-width: 5px;
+  background-color: #2c2c2c;
+  width: 40%;
+  padding: 13px;
+  margin-left: 29%;
+  margin-top: 15%;
+  
+}
+.git h3{
+  font-size: 35px;
+}
+.git p{
+  font-size: 25px;
+}
+.git a{
+  color: greenyellow;
+}
+
+.about{
+  box-shadow: 
+              0 0 0 2px blue, 
+              0 0 0 3px aqua, 
+              0 0 0 4px white, 
+              0 0 0 5px violet, 
+              0 0 0 6px blue;
+              
+  background-color: #2c2c2c;
+  width: 52%;
+  padding: 13px;
+  margin-left: 24%;
+  margin-top: 15%;
+}
+
+.about h3{
+  margin-left: 39% !important;
+  font-size: 35px;
+}
+
+.about p{
+  font-size: 25px;
+}
+
+.programming{
+  box-shadow: 5px 5px 10px rgba(143, 75, 252, 0.5);
+  border-bottom: 1px solid violet;
+  border-right: 1px solid rgb(130, 130, 241);
+  border-top: 1px solid aqua;
+  border-left: 1px solid white;
+  
+  background-color: #2c2c2c;
+  width: 50%;
+  margin-left: 23%;
+  margin-top: 15%;
+  padding: 13px;
+  margin-bottom: 15%;
+}
+
+.programming h3{
+  margin-left: 39%;
+  font-size: 35px;
+}
+
+.programming p{
+  font-size: 25px;
+  text-align: left;
+}
+
+
+
+.container {
+  text-align: center;
+}
+
+.animated-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 5s, transform 1s;
+}   
+
+.animated-text.animate {
+opacity: 1;
+transform: translateY(0);
+}
+
+.contact{
+  padding: 1em 2em;
+ 
+  box-shadow: 10px 10px 5px 10px rgba(227, 42, 252, 0.5);
+  border-bottom: 1px solid violet;
+  border-right: 1px solid rgb(130, 130, 241);
+  
+  border-radius: 1em;
   
  
-  #background {
-    position: absolute;
-    background: radial-gradient(ellipse at top left, #222222, transparent) no-repeat, radial-gradient(ellipse at bottom right, #262626, transparent) no-repeat;
-    background-color: #2c2c2c;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-  }
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1.5rem;
+  
+ transition: 0.3ms;
+  
+  
+  background-color: #2c2c2c;
+  width: 50%;
+  margin-left: 23%;
+  margin-top: 15%;
+  padding: 13px;
+  margin-bottom: 15%;
+}
+.contact:hover{
+  box-shadow: 10px 10px 5px 10px rgba(33, 64, 206, 0.5);
+}
 
-  
-  
+.contact h3{
+  margin-left: 39%;
+  font-size: 35px;
+}
+
+.contact p{
+  font-size: 25px;
+  text-align: left;
+}
+
+.contact a{
+  color: greenyellow;
+}
+
+
+
+
+
+
+#background {
+  position: absolute;
+  background: radial-gradient(ellipse at top left, #222222, transparent) no-repeat, radial-gradient(ellipse at bottom right, #262626, transparent) no-repeat;
+  background-color: #2c2c2c;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+

@@ -98,78 +98,77 @@ main{
   background-color: #1e1e1e;
   color: white;
 }
+.git{
+  border-bottom: 1px solid green;
+  border-left: 1px solid greenyellow;
+  width: 40%;
+}
+
+.git{
+  position: absolute;
+  top: 50%;
+  left: 31%;
+  background-color: #1d1c1c;
+}
+
 .git h3{
   text-align: center;
+  color: white;
 }
-.git{
-  
-  border-image: linear-gradient(to right, blue, aqua, white, violet);
-  border-image-slice: 1;
-  border-image-width: 5px;
-  background-color: #2c2c2c;
-  width: 40%;
-  padding: 13px;
-  margin-left: 29%;
-  margin-top: 15%;
-  
-}
-.git h3{
-  font-size: 35px;
-}
+
 .git p{
-  font-size: 25px;
+  margin-left: 1%;
+  margin-bottom: 1%;
+  color: white;
 }
-.git a{
-  color: greenyellow;
+
+
+.about{
+  border-bottom: 1px solid green;
+  border-left: 1px solid greenyellow;
+  width: 40%;
 }
 
 .about{
-  box-shadow: 
-              0 0 0 2px blue, 
-              0 0 0 3px aqua, 
-              0 0 0 4px white, 
-              0 0 0 5px violet, 
-              0 0 0 6px blue;
-              
-  background-color: #2c2c2c;
-  width: 52%;
-  padding: 13px;
-  margin-left: 24%;
-  margin-top: 15%;
+  position: absolute;
+  top: 50%;
+  left: 31%;
+  background-color: #1d1c1c;
 }
 
 .about h3{
-  margin-left: 39% !important;
-  font-size: 35px;
+  text-align: center;
+  color: white;
 }
 
 .about p{
-  font-size: 25px;
+  margin-left: 1%;
+  margin-bottom: 1%;
+  color: white;
 }
 
 .programming{
-  box-shadow: 5px 5px 10px rgba(143, 75, 252, 0.5);
-  border-bottom: 1px solid violet;
-  border-right: 1px solid rgb(130, 130, 241);
-  border-top: 1px solid aqua;
-  border-left: 1px solid white;
-  
-  background-color: #2c2c2c;
-  width: 50%;
-  margin-left: 23%;
-  margin-top: 15%;
-  padding: 13px;
-  margin-bottom: 15%;
+  border-bottom: 1px solid green;
+  border-left: 1px solid greenyellow;
+  width: 45%;
+}
+
+.programming{
+  position: absolute;
+  top: 50%;
+  left: 31%;
+  background-color: #1d1c1c;
 }
 
 .programming h3{
-  margin-left: 39%;
-  font-size: 35px;
+  text-align: center;
+  color: white;
 }
 
 .programming p{
-  font-size: 25px;
-  text-align: left;
+  margin-left: 1%;
+  margin-bottom: 1%;
+  color: white;
 }
 
 

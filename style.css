@@ -1,7 +1,7 @@
 *{
   margin: 0%;
   padding: 0%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: monospace;
   
 }
 
@@ -105,9 +105,11 @@ main{
 }
 
 .git{
-  position: absolute;
+  position: relative;
+
   top: 50%;
-  left: 31%;
+  left: 50%;
+  transform: translate(-50%);
   background-color: #1d1c1c;
 }
 
@@ -134,9 +136,11 @@ main{
 }
 
 .about{
-  position: absolute;
+  position: relative;
+
   top: 50%;
-  left: 31%;
+  left: 50%;
+  transform: translate(-50%);
   background-color: #1d1c1c;
 }
 
@@ -158,9 +162,11 @@ main{
 }
 
 .programming{
-  position: absolute;
+  position: relative;
+
   top: 50%;
-  left: 29%;
+  left: 50%;
+  transform: translate(-50%);
   background-color: #1d1c1c;
 }
 
@@ -233,6 +239,10 @@ transform: translateY(0);
 
 .contact a{
   color: greenyellow;
+}
+
+.lan{
+  background-color: rgb(32, 11, 32);
 }
 
 

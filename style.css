@@ -109,7 +109,7 @@ main{
 .git{
   position: relative;
 
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%);
   background-color: #1d1c1c;
@@ -142,7 +142,7 @@ main{
 .about{
   position: relative;
 
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%);
   background-color: #1d1c1c;
@@ -169,7 +169,7 @@ main{
 
 .programming{
   position: relative;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%);
   background-color: #1d1c1c;

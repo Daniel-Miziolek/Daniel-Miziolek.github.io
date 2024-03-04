@@ -33,7 +33,9 @@ header a{
 }
 
 header a:hover{
-  border-bottom: 2px solid white;
+transition: 200ms;
+border-bottom: 1px solid white;
+  
 }
 
 body, html {
@@ -116,6 +118,7 @@ main{
 .git h3{
   text-align: center;
   color: white;
+  font-size: 22px;
 }
 
 .git a{
@@ -125,6 +128,7 @@ main{
 .git p{
   margin-left: 1%;
   margin-bottom: 1%;
+  font-size: 18px;
   color: white;
 }
 
@@ -147,11 +151,13 @@ main{
 .about h3{
   text-align: center;
   color: white;
+  font-size: 22px;
 }
 
 .about p{
   margin-left: 1%;
   margin-bottom: 1%;
+  font-size: 18px;
   color: white;
 }
 
@@ -163,7 +169,6 @@ main{
 
 .programming{
   position: relative;
-
   top: 50%;
   left: 50%;
   transform: translate(-50%);
@@ -173,11 +178,13 @@ main{
 .programming h3{
   text-align: center;
   color: white;
+  font-size: 23px;
 }
 
 .programming p{
   margin-left: 1%;
   margin-bottom: 1%;
+  font-size: 20px;
   color: white;
 }
 

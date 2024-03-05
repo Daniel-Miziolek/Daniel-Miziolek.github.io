@@ -1,8 +1,8 @@
 *{
   margin: 0%;
   padding: 0%;
-  font-family: monospace;
-  
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 body{
@@ -29,13 +29,13 @@ header a{
   font-size: 20px;
   color: white;
   transition: 0.3ms;
-  
+
 }
 
 header a:hover{
 transition: 200ms;
 border-bottom: 1px solid white;
-  
+
 }
 
 body, html {
@@ -62,10 +62,10 @@ body, html {
 
 
   height: 110%;
-  
-  
 
-  
+
+
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -90,7 +90,7 @@ nav{
 }
 .bg-text h1{
   font-size: 45px;
-  
+
 }
 .bg-text p{
   text-shadow: 2px 2px 4px rgba(100, 5, 240, 2);
@@ -113,6 +113,15 @@ main{
   left: 50%;
   transform: translate(-50%);
   background-color: #1d1c1c;
+}
+
+.gi{
+  font-size: 22px;
+  position: absolute;
+  color: white;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .git h3{
@@ -207,12 +216,9 @@ main{
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 5s, transform 1s;
-}   
+}
 
 .animated-text.animate {
 opacity: 1;
 transform: translateY(0);
 }
-
-
-

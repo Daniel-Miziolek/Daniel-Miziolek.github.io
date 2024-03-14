@@ -158,6 +158,11 @@ main{
   margin-bottom: 2%
 }
 
+button{
+  position: absolute;
+  left: 90%;
+}
+
 .about{
   position: relative;
   top: 40%;

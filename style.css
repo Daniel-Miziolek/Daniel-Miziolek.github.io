@@ -13,6 +13,7 @@ html {
 scroll-behavior: smooth;
 }
 
+
 header nav{
 position: relative;
 text-align: center;
@@ -39,7 +40,7 @@ border-bottom: 1px solid white;
 }
 
 body, html {
-  height: 100%;
+  height: 98%;
 }
 
 * {
@@ -90,10 +91,50 @@ nav{
 }
 .bg-text h1{
   font-size: 45px;
-
 }
+
 .bg-text p{
   text-shadow: 2px 2px 4px rgba(100, 5, 240, 2);
+}
+
+footer{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p{
+  position: absolute;
+  text-align: center;
+  color: white;
+  top: 96.5%;
+  left: 44%;
+  font-size: 18px;
+}
+
+
+footer button{
+  border-radius: 60px;
+  position: absolute;
+  display: flex;
+}
+
+.btn1{
+  position: absolute;
+  background-color: white;
+  width: 40px;
+  height: 30px;
+  left: 56%;
+  top: 96.3%;
+}
+
+.btn2{
+  position: absolute;
+  background-color: black;
+  width: 40px;
+  height: 30px;
+  left: 60%;
+  top: 96.3%;
 }
 
 main{
@@ -119,7 +160,7 @@ main{
   font-size: 22px;
   position: absolute;
   color: white;
-  top: 46%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%);
 }
@@ -134,7 +175,7 @@ main{
   color: green;
 }
 
-.git p{
+.git .text{
   margin-left: 1%;
   margin-bottom: 1%;
   font-size: 18px;

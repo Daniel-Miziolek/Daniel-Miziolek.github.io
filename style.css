@@ -24,6 +24,8 @@ padding: 10px;
 background-color: #181818;
 }
 
+
+
 header a{
   text-decoration: none;
   margin: 8px;
@@ -95,6 +97,7 @@ nav{
 
 .bg-text p{
   text-shadow: 2px 2px 4px rgba(100, 5, 240, 2);
+  line-height: 0;
 }
 
 footer{
@@ -107,7 +110,7 @@ footer p{
   position: absolute;
   text-align: center;
   color: white;
-  top: 96.5%;
+  top: 96.9%;
   left: 44%;
   font-size: 18px;
 }
@@ -268,3 +271,77 @@ button{
 opacity: 1;
 transform: translateY(0);
 }
+
+@media screen and (max-width: 1000px) {
+  footer p{
+    font-size: 15px;
+  }
+
+  footer button{
+    margin-left: 2%;
+    margin-top: 0.5%;
+    width: 15px !important;
+    height: 20px !important;
+  }
+
+  p{
+    font-size: 15px !important;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  footer p{
+    font-size: 13px;
+  }
+
+  footer button{
+    margin-left: 2%;
+    margin-top: 0.5%;
+    width: 15px !important;
+    height: 20px !important;
+  }
+
+  p{
+    font-size: 13px !important;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  footer p{
+    font-size: 13px;
+  }
+
+  footer button{
+    margin-left: 3%;
+    margin-top: 0.5%;
+    width: 15px !important;
+    height: 20px !important;
+  }
+
+  p{
+    font-size: 13px !important;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  footer p{
+    font-size: 13px;
+  }
+
+  footer button{
+    margin-left: 6%;
+    margin-top: 0.5%;
+    width: 15px !important;
+    height: 20px !important;
+  }
+
+  p{
+    font-size: 13px !important;
+    opacity: 1 !important;
+  }
+
+}
+

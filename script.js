@@ -38,6 +38,12 @@ function myFunction() {
         aboutDiv.style.backgroundColor = "white"; // Zmiana koloru tła diva o klasie "about" na białe
     }
 
+    var aboutDiv = document.querySelector(".git"); // Pobranie diva o klasie "about"
+    if (aboutDiv) {
+        aboutDiv.style.backgroundColor = "white"; // Zmiana koloru tła diva o klasie "about" na białe
+    }
+
+
     var aboutDiv = document.querySelector(".programming"); // Pobranie diva o klasie "about"
     if (aboutDiv) {
         aboutDiv.style.backgroundColor = "white"; // Zmiana koloru tła diva o klasie "about" na białe

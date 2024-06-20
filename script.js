@@ -23,30 +23,30 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function myFunction() {
-    document.body.style.backgroundColor = "white"; // Zmiana koloru tła body na białe
-    var paragraphs = document.getElementsByTagName("p"); // Pobranie wszystkich elementów <p>
+    document.body.style.backgroundColor = "white"; 
+    var paragraphs = document.getElementsByTagName("p"); 
     for (var i = 0; i < paragraphs.length; i++) {
-        paragraphs[i].style.color = "black"; // Zmiana koloru tekstu na czarny dla wszystkich elementów <p>
+        paragraphs[i].style.color = "black"; 
         paragraphs[i].style.backgroundColor = "white";
     }
-    var headings = document.getElementsByTagName("h3"); // Pobranie wszystkich elementów <h3>
+    var headings = document.getElementsByTagName("h3"); 
     for (var i = 0; i < headings.length; i++) {
-        headings[i].style.color = "black"; // Zmiana koloru tekstu na czarny dla wszystkich elementów <h3>
+        headings[i].style.color = "black"; 
     }
-    var aboutDiv = document.querySelector(".about"); // Pobranie diva o klasie "about"
+    var aboutDiv = document.querySelector(".about"); 
     if (aboutDiv) {
-        aboutDiv.style.backgroundColor = "white"; // Zmiana koloru tła diva o klasie "about" na białe
-    }
-
-    var aboutDiv = document.querySelector(".git"); // Pobranie diva o klasie "about"
-    if (aboutDiv) {
-        aboutDiv.style.backgroundColor = "white"; // Zmiana koloru tła diva o klasie "about" na białe
+        aboutDiv.style.backgroundColor = "white"; 
     }
 
-
-    var aboutDiv = document.querySelector(".programming"); // Pobranie diva o klasie "about"
+    var aboutDiv = document.querySelector(".git"); 
     if (aboutDiv) {
-        aboutDiv.style.backgroundColor = "white"; // Zmiana koloru tła diva o klasie "about" na białe
+        aboutDiv.style.backgroundColor = "white"; 
+    }
+
+
+    var aboutDiv = document.querySelector(".programming");
+    if (aboutDiv) {
+        aboutDiv.style.backgroundColor = "white"; 
     }
 }
 

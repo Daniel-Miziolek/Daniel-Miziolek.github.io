@@ -11,18 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    
-
-    
-
-    
-    window.addEventListener("scroll", handleScroll);
-
-    
+    window.addEventListener("scroll", handleScroll);    
     handleScroll();
 });
 
-function myFunction() {
+/*function myFunction() {
     document.body.style.backgroundColor = "white"; 
     var paragraphs = document.getElementsByTagName("p"); 
     for (var i = 0; i < paragraphs.length; i++) {
@@ -52,5 +45,5 @@ function myFunction() {
 
 function myFunction2() {
     location.reload();
-}
+}*/
 

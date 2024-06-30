@@ -13,6 +13,10 @@ html {
 scroll-behavior: smooth;
 }
 
+:root{
+  --accent-color: rgb(0, 195, 255);
+}
+
 
 header nav{
 position: relative;
@@ -23,8 +27,6 @@ width: 100%;
 padding: 10px;
 background-color: #181818;
 }
-
-
 
 header a{
   text-decoration: none;
@@ -58,17 +60,9 @@ body, html {
 .bg-image div{
 
   background-image: url("tlo.png");
-
-
   filter: blur(8px);
   -webkit-filter: blur(8px);
-
-
   height: 110%;
-
-
-
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,10 +89,7 @@ nav{
   font-size: 45px;
 }
 
-.bg-text p{
-  text-shadow: 2px 2px 4px rgba(100, 5, 240, 2);
-  line-height: 0;
-}
+
 
 footer{
   text-align: center;
@@ -145,8 +136,8 @@ main{
   color: white;
 }
 .git{
-  border-bottom: 1px solid green;
-  border-right: 1px solid greenyellow;
+  border-bottom: 2px solid var(--accent-color);
+  border-right: 2px solid var(--accent-color);
   width: 40%;
 }
 
@@ -175,7 +166,7 @@ main{
 }
 
 .git a{
-  color: green;
+  color: var(--accent-color);
 }
 
 .git .text{
@@ -196,8 +187,8 @@ main{
 
 
 .about{
-  border-bottom: 1px solid green;
-  border-right: 1px solid greenyellow;
+  border-bottom: 2px solid var(--accent-color);
+  border-right: 2px solid var(--accent-color);
   width: 45%;
   margin-bottom: 2%
 }
@@ -229,8 +220,8 @@ button{
 }
 
 .programming{
-  border-bottom: 1px solid green;
-  border-right: 1px solid greenyellow;
+  border-bottom: 2px solid var(--accent-color);
+  border-right: 2px solid var(--accent-color);
   width: 45%;
 }
 
@@ -292,14 +283,8 @@ transform: translateY(0);
 
 @media screen and (max-width: 800px) {
   footer p{
-    font-size: 13px;
-  }
-
-  footer button{
-    margin-left: 2%;
-    margin-top: 0.5%;
-    width: 15px !important;
-    height: 20px !important;
+    font-size: 15px;
+    text-align: center !important;
   }
 
   p{
@@ -310,14 +295,8 @@ transform: translateY(0);
 
 @media screen and (max-width: 600px) {
   footer p{
-    font-size: 13px;
-  }
-
-  footer button{
-    margin-left: 3%;
-    margin-top: 0.5%;
-    width: 15px !important;
-    height: 20px !important;
+    font-size: 15px;
+    text-align: center !important;
   }
 
   p{
@@ -328,19 +307,12 @@ transform: translateY(0);
 
 @media screen and (max-width: 400px) {
   footer p{
-    font-size: 13px;
-  }
-
-  footer button{
-    margin-left: 6%;
-    margin-top: 0.5%;
-    width: 15px !important;
-    height: 20px !important;
+    font-size: 15px;
+    text-align: center !important;
   }
 
   p{
     font-size: 13px !important;
-    opacity: 1 !important;
   }
 
 }

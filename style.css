@@ -135,13 +135,11 @@ main{
   background-color: #1e1e1e;
   color: white;
 }
+
 .git{
   border-bottom: 2px solid var(--accent-color);
   border-right: 2px solid var(--accent-color);
   width: 40%;
-}
-
-.git{
   position: relative;
 
   top: 45%;
@@ -185,14 +183,6 @@ main{
   transform: translate(-50%);
 }
 
-
-.about{
-  border-bottom: 2px solid var(--accent-color);
-  border-right: 2px solid var(--accent-color);
-  width: 45%;
-  margin-bottom: 2%
-}
-
 button{
   position: absolute;
   left: 90%;
@@ -204,6 +194,10 @@ button{
   left: 50%;
   transform: translate(-50%);
   background-color: #282727;
+  border-bottom: 2px solid var(--accent-color);
+  border-right: 2px solid var(--accent-color);
+  width: 45%;
+  margin-bottom: 2%
 }
 
 .about h3{
@@ -220,17 +214,14 @@ button{
 }
 
 .programming{
-  border-bottom: 2px solid var(--accent-color);
-  border-right: 2px solid var(--accent-color);
-  width: 45%;
-}
-
-.programming{
   position: relative;
   top: 40%;
   left: 50%;
   transform: translate(-50%);
   background-color: #282727;
+  border-bottom: 2px solid var(--accent-color);
+  border-right: 2px solid var(--accent-color);
+  width: 45%;
 }
 
 .programming h3{

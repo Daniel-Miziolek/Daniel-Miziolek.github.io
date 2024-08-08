@@ -102,10 +102,10 @@ footer p{
   text-align: center;
   color: white;
   top: 96.9%;
-  left: 44%;
+  left: 50%;
+  transform: translate(-50%);
   font-size: 18px;
 }
-
 
 footer button{
   border-radius: 60px;

@@ -2,30 +2,35 @@
   margin: 0%;
   padding: 0%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
 
 body{
-background-color: #1e1e1e;
+  background-color: #1e1e1e;
+  height: 98%;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  height: 98%;
 }
 
 :root{
-  --accent-color: rgb(0, 195, 255);
+  --accent-color: rgb(56,204,174);
 }
 
 
 header nav{
-position: relative;
-text-align: center;
-top: 0;
-box-sizing: border-box;
-width: 100%;
-padding: 10px;
-background-color: #181818;
+  position: relative;
+  text-align: center;
+  top: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  background-color: #181818;
 }
 
 header a{
@@ -34,21 +39,15 @@ header a{
   font-size: 20px;
   color: white;
   transition: 0.3ms;
-
 }
 
 header a:hover{
-transition: 200ms;
-border-bottom: 1px solid white;
-
+  border-bottom: 1px solid var(--accent-color);
+  transition: 0.35s;
 }
 
-body, html {
-  height: 98%;
-}
-
-* {
-  box-sizing: border-box;
+nav{
+  border-collapse: collapse;
 }
 
 .bg-image{
@@ -68,11 +67,6 @@ body, html {
   background-size: cover;
 }
 
-nav{
-  border-collapse: collapse;
-}
-
-
 .bg-text {
   color: white;
   font-weight: bold;
@@ -85,11 +79,10 @@ nav{
   padding: 20px;
   text-align: center;
 }
+
 .bg-text h1{
   font-size: 45px;
 }
-
-
 
 footer{
   text-align: center;
@@ -113,24 +106,6 @@ footer button{
   display: flex;
 }
 
-.btn1{
-  position: absolute;
-  background-color: white;
-  width: 40px;
-  height: 30px;
-  left: 48%;
-  top: 96.3%;
-}
-
-.btn2{
-  position: absolute;
-  background-color: black;
-  width: 40px;
-  height: 30px;
-  left: 52%;
-  top: 96.3%;
-}
-
 main{
   background-color: #1e1e1e;
   color: white;
@@ -141,7 +116,6 @@ main{
   border-right: 2px solid var(--accent-color);
   width: 40%;
   position: relative;
-
   top: 45%;
   left: 50%;
   transform: translate(-50%);
@@ -181,11 +155,6 @@ main{
   top: 39%;
   left: 50%;
   transform: translate(-50%);
-}
-
-button{
-  position: absolute;
-  left: 90%;
 }
 
 .about{
@@ -236,8 +205,6 @@ button{
   font-size: 18px;
   color: white;
 }
-
-
 
 .container {
   text-align: center;

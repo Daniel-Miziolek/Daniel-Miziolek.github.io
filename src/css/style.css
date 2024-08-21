@@ -22,7 +22,6 @@ html {
   --accent-color: rgb(56,204,174);
 }
 
-
 header nav{
   position: relative;
   text-align: center;
@@ -42,8 +41,7 @@ header a{
 }
 
 header a:hover{
-  border-bottom: 1px solid var(--accent-color);
-  transition: 0.35s;
+  border-bottom: 2px solid var(--accent-color);
 }
 
 nav{
@@ -98,12 +96,6 @@ footer p{
   left: 50%;
   transform: translate(-50%);
   font-size: 18px;
-}
-
-footer button{
-  border-radius: 60px;
-  position: absolute;
-  display: flex;
 }
 
 main{

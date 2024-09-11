@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="shortcut icon" href="/src/images/dm.png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="shortcut icon" href="/src/images/dm.png"/>
 </head>
 <body>
     <header>
         <nav>
             <a href="index.html">Home</a>
             <a style="color: rgb(56,204,174)" href="about.html">About</a>
-            <a href="github.html">GitHub</a>         
+            <a href="github.html">GitHub</a>   
+            <button onclick="changeColor()">
+                <span class="material-icons" style="color: #FFD700;">lightbulb</span>
+            </button>
         </nav>
     </header>
     
@@ -32,5 +35,7 @@
     <footer>
         <p>© Daniel Miziołek</p>
     </footer>
+
+    <script src="/src/js/script.js"></script>
 </body>
 </html>

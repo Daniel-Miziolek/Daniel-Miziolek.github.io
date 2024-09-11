@@ -22,6 +22,7 @@ html {
   --accent-color: rgb(56,204,174);
 }
 
+
 header nav{
   position: relative;
   text-align: center;
@@ -41,11 +42,23 @@ header a{
 }
 
 header a:hover{
-  border-bottom: 2px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+  transition: 0.35s;
 }
 
 nav{
   border-collapse: collapse;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: 300ms;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid var(--accent-color);
 }
 
 .bg-image{
@@ -55,7 +68,6 @@ nav{
 }
 
 .bg-image div{
-
   background-image: url("/src/images/tlo.png");
   filter: blur(8px);
   -webkit-filter: blur(8px);
@@ -218,13 +230,6 @@ transform: translateY(0);
     font-size: 15px;
   }
 
-  footer button{
-    margin-left: 2%;
-    margin-top: 0.5%;
-    width: 15px !important;
-    height: 20px !important;
-  }
-
   p{
     font-size: 15px !important;
   }
@@ -266,3 +271,4 @@ transform: translateY(0);
   }
 
 }
+

@@ -124,6 +124,7 @@ main{
   left: 50%;
   transform: translate(-50%);
   background-color: #282727;
+  padding: 0.5%;
 }
 
 .gi{
@@ -170,7 +171,8 @@ main{
   border-bottom: 2px solid var(--accent-color);
   border-right: 2px solid var(--accent-color);
   width: 45%;
-  margin-bottom: 2%
+  margin-bottom: 2%;
+  padding: 0.5%;  
 }
 
 .about h3{
@@ -195,6 +197,7 @@ main{
   border-bottom: 2px solid var(--accent-color);
   border-right: 2px solid var(--accent-color);
   width: 45%;
+  padding: 0.5%;
 }
 
 .programming h3{

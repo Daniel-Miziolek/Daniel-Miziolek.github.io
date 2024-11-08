@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const animatedText = document.querySelector(".animated-text");
 
-    
     function handleScroll() {
         const elementPosition = animatedText.getBoundingClientRect().top;
         const screenHeight = window.innerHeight;
@@ -16,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function changeColor() {
-    var currentMode = localStorage.getItem('colorMode');
-    
+    let currentMode = localStorage.getItem('colorMode');
+
     if (currentMode === 'default') {
         localStorage.setItem('colorMode', 'changed');
         localStorage.setItem('bodyColor', 'white');
@@ -34,67 +33,77 @@ function changeColor() {
 }
 
 function applyColors() {
-    var bodyColor = localStorage.getItem('bodyColor');
-    var textColor = localStorage.getItem('textColor');
-    var elementColor = localStorage.getItem('elementColor');
+    let bodyColor = localStorage.getItem('bodyColor');
+    let textColor = localStorage.getItem('textColor');
+    let elementColor = localStorage.getItem('elementColor');
+    
+    const isIndexPage = document.body.id === 'page1';
 
     if (bodyColor && textColor && elementColor) {
-        document.body.style.backgroundColor = bodyColor;
+        if (!isIndexPage) {
+            document.body.style.backgroundColor = bodyColor;
+        }        
 
-        var paragraphs = document.getElementsByTagName("p");
-        for (var i = 0; i < paragraphs.length; i++) {
+        document.getElementById('but').style.boxShadow = "2px 2px 2px 2px white";    
+
+        let paragraphs = document.getElementsByTagName("p");
+        for (let i = 0; i < paragraphs.length; i++) {
             paragraphs[i].style.color = textColor;
             paragraphs[i].style.backgroundColor = elementColor;
         }
 
-        var headings = document.getElementsByTagName("h3");
-        for (var i = 0; i < headings.length; i++) {
+        let headings = document.getElementsByTagName("h3");
+        for (let i = 0; i < headings.length; i++) {
             headings[i].style.color = textColor;
         }
 
-        var aboutDiv = document.querySelector(".about");
+        let aboutDiv = document.querySelector(".about");
         if (aboutDiv) {
             aboutDiv.style.backgroundColor = elementColor;
         }
 
-        var gitDiv = document.querySelector(".git");
+        let gitDiv = document.querySelector(".git");
         if (gitDiv) {
             gitDiv.style.backgroundColor = elementColor;
-        }
+        }        
 
-        var programmingDiv = document.querySelector(".programming");
+        let programmingDiv = document.querySelector(".programming");
         if (programmingDiv) {
             programmingDiv.style.backgroundColor = elementColor;
         }
+
+        document.getElementById("fo").style.backgroundColor = elementColor;        
     } else {
         document.body.style.backgroundColor = '';
-        var paragraphs = document.getElementsByTagName("p");
-        for (var i = 0; i < paragraphs.length; i++) {
+        document.getElementById('but').style.boxShadow = "";    
+        let paragraphs = document.getElementsByTagName("p");
+        for (let i = 0; i < paragraphs.length; i++) {
             paragraphs[i].style.color = '';
             paragraphs[i].style.backgroundColor = '';
         }
 
-        var headings = document.getElementsByTagName("h3");
-        for (var i = 0; i < headings.length; i++) {
+        let headings = document.getElementsByTagName("h3");
+        for (let i = 0; i < headings.length; i++) {
             headings[i].style.color = '';
         }
 
-        var aboutDiv = document.querySelector(".about");
+        let aboutDiv = document.querySelector(".about");
         if (aboutDiv) {
             aboutDiv.style.backgroundColor = '';
         }
 
-        var gitDiv = document.querySelector(".git");
+        let gitDiv = document.querySelector(".git");
         if (gitDiv) {
             gitDiv.style.backgroundColor = '';
         }
 
-        var programmingDiv = document.querySelector(".programming");
+        let programmingDiv = document.querySelector(".programming");
         if (programmingDiv) {
             programmingDiv.style.backgroundColor = '';
         }
     }
 }
+
 
 window.onload = function() {
     if (!localStorage.getItem('colorMode')) {

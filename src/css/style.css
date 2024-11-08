@@ -10,13 +10,9 @@ body{
   height: 100vh;
 }
 
-html {
-  scroll-behavior: smooth;
-  height: 98%;
-}
-
-:root{
+:root {
   --accent-color: rgb(56,204,174);
+  --darker-accent-color: rgb(40,150,128); 
 }
 
 header nav{
@@ -54,6 +50,8 @@ button {
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid rgba(255, 255, 255, 0);
   cursor: pointer;
+  position: absolute;
+  right: 20px;
 }
 
 .bg-image{
@@ -87,32 +85,6 @@ button {
 
 .bg-text h1{
   font-size: 45px;
-}
-
-footer{
-  text-align: center;
-  align-items: center;
-  justify-content: center;  
-}
-
-footer p{
-  position: absolute;
-  text-align: center;
-  color: white;
-  top: 96.9%;
-  left: 50%;
-  transform: translate(-50%);
-  font-size: 18px;
-}
-
-footer span{
-  position: absolute;
-  text-align: center;
-  color: white;
-  top: 96.9%;
-  left: 50%;
-  transform: translate(-50%);
-  font-size: 18px;
 }
 
 main{
@@ -216,6 +188,13 @@ main{
   text-align: center;
 }
 
+body.changed-mode .about,
+body.changed-mode .git,
+body.changed-mode .programming {
+    border-bottom: 2px solid var(--darker-accent-color);
+    border-right: 2px solid var(--darker-accent-color);
+}
+
 .animated-text {
   opacity: 0;
   transform: translateY(20px);
@@ -228,48 +207,25 @@ transform: translateY(0);
 }
 
 @media screen and (max-width: 1000px) {
-  footer p{
-    font-size: 15px;
-  }
-
   p{
     font-size: 15px !important;
   }
-
 }
 
 @media screen and (max-width: 800px) {
-  footer p{
-    font-size: 15px;
-    text-align: center !important;
-  }
-
   p{
     font-size: 13px !important;
   }
-
 }
 
 @media screen and (max-width: 600px) {
-  footer p{
-    font-size: 15px;
-    text-align: center !important;
-  }
-
   p{
     font-size: 13px !important;
   }
-
 }
 
 @media screen and (max-width: 400px) {
-  footer p{
-    font-size: 15px;
-    text-align: center !important;
-  }
-
   p{
     font-size: 13px !important;
   }
-
 }

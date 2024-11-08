@@ -21,13 +21,15 @@ function changeColor() {
         localStorage.setItem('colorMode', 'changed');
         localStorage.setItem('bodyColor', 'white');
         localStorage.setItem('textColor', 'black');
-        localStorage.setItem('elementColor', 'white');
+        localStorage.setItem('elementColor', '#f0f0f0');
+        document.body.classList.add('changed-mode');
     } else {
         localStorage.setItem('colorMode', 'default');
         localStorage.setItem('bodyColor', '');
         localStorage.setItem('textColor', '');
         localStorage.setItem('elementColor', '');
-    }
+        document.body.classList.remove('changed-mode');
+    }    
     
     applyColors();
 }
@@ -43,8 +45,6 @@ function applyColors() {
         if (!isIndexPage) {
             document.body.style.backgroundColor = bodyColor;
         }        
-
-        document.getElementById('but').style.boxShadow = "2px 2px 2px 2px white";    
 
         let paragraphs = document.getElementsByTagName("p");
         for (let i = 0; i < paragraphs.length; i++) {
@@ -104,13 +104,11 @@ function applyColors() {
     }
 }
 
-
 window.onload = function() {
     if (!localStorage.getItem('colorMode')) {
         localStorage.setItem('colorMode', 'default');
+    } else if (localStorage.getItem('colorMode') === 'changed') {
+        document.body.classList.add('changed-mode');       
     }
     applyColors();
 };
-
-
-

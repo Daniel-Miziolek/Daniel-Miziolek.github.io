@@ -1,0 +1,15 @@
+---
+const path = Astro.url.pathname;
+---
+
+<header>
+  <nav>
+    <a href="/" class={path === "/" && "active"}>Home</a>
+    <a href="/about" class={path === "/about" && "active"}>About</a>
+    <a href="/github" class={path === "/github" && "active"}>GitHub</a>
+
+    <button onclick="toggleMode()">
+      <i class="fa-solid fa-circle-half-stroke"></i>
+    </button>
+  </nav>
+</header>

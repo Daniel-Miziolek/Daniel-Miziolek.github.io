@@ -4,9 +4,10 @@ const path = Astro.url.pathname;
 
 <header>
   <nav>
-    <a href="/" class={path === "/" && "active"}>Home</a>
-    <a href="/about" class={path === "/about" && "active"}>About</a>
-    <a href="/github" class={path === "/github" && "active"}>GitHub</a>
+    <a href="/" class={path === "/"}>Home</a>
+    <a href="/about" class={path === "/about"}>About</a>
+    <a href="/github" class={path === "/github"}>GitHub</a>
+    <a href="/projects" class={path === "/projects"}>Projects</a>
 
     <button onclick="toggleMode()">
       <i class="fa-solid fa-circle-half-stroke"></i>

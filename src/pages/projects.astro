@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import "../style/style.css";
+---
+
+<Layout title="Projects">
+    <Header active="home" />
+
+    <section>
+        <h3>Projects</h3>
+
+        <div class="projects">
+            <div class="pr1">
+                <h3>Chat App</h3>
+                <a href="https://github.com/Daniel-Miziolek/chatApp" target="_blank">
+                    <img src="/public/images/pr1.png" alt="" />
+                </a>
+            </div>
+
+            <div class="pr2">
+                <h3>Personal Website</h3>
+                <a href="https://github.com/Daniel-Miziolek/Daniel-Miziolek.github.io" target="_blank">
+                    <img src="/public/images/pr2.png" alt="" />
+                </a>
+            </div>
+
+            <div class="pr3">
+                <h3>Audio Player</h3>
+                <a href="https://github.com/Daniel-Miziolek/audio-player" target="_blank">
+                    <img src="/public/images/pr3.png" alt="" />
+                </a>
+            </div>
+
+            <div class="pr4">
+                <h3>Nexo</h3>
+                <a href="https://github.com/Daniel-Miziolek/nexo" target="_blank">
+                    <img src="/public/images/pr4.png" alt="" />
+                </a>
+            </div>
+        </div>
+    </section>
+</Layout>

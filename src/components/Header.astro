@@ -1,16 +1,12 @@
 ---
-const path = Astro.url.pathname;
+const { active } = Astro.props;
 ---
 
 <header>
   <nav>
-    <a href="/" class={path === "/"}>Home</a>
-    <a href="/about" class={path === "/about"}>About</a>
-    <a href="/github" class={path === "/github"}>GitHub</a>
-    <a href="/projects" class={path === "/projects"}>Projects</a>
-
-    <button onclick="toggleMode()">
-      <i class="fa-solid fa-circle-half-stroke"></i>
-    </button>
+    <a href="/" class={active === "home" ? "active" : ""}>Home</a>
+    <a href="/about" class={active === "about" ? "active" : ""}>About</a>
+    <a href="/projects" class={active === "projects" ? "active" : ""}>Projects</a>
+    <a href="https://github.com/Daniel-Miziolek" target="_blank">Github<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
   </nav>
 </header>

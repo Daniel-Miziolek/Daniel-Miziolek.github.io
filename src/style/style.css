@@ -34,7 +34,6 @@ header a{
   margin: 8px;
   font-size: 23px;
   color: white;
-  transition: 300ms
 }
 
 header a:hover {
@@ -44,14 +43,6 @@ header a:hover {
 i {
   padding-left: 10px;
   font-size: .8em;
-}
-
-span:hover {
-  transition: 200ms;
-}
-
-nav{
-  border-collapse: collapse;
 }
 
 h1 {
@@ -123,6 +114,19 @@ section .card{
 section .card p{
   font-size: 18px;
   color: var(--text-color);
+}
+
+section .card label {
+  color: var(--accent-color);
+}
+
+section .card label:hover {
+  color: var(--darker-accent-color);
+  cursor: pointer;
+}
+
+.blog {
+  display: none;
 }
 
 .projects {
@@ -225,6 +229,13 @@ transform: translateY(0);
   header nav {
     text-align: center;
   }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -243,6 +254,13 @@ transform: translateY(0);
   header nav {
     text-align: center;
   }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -260,5 +278,12 @@ transform: translateY(0);
 
   header nav {
     text-align: center;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }

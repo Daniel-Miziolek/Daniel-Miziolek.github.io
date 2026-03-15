@@ -125,7 +125,7 @@ section .card label:hover {
   cursor: pointer;
 }
 
-.blog {
+#text {
   display: none;
 }
 

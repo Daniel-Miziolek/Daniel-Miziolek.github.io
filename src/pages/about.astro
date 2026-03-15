@@ -10,67 +10,58 @@ import "../style/style.css";
     <section class="sec1">
         <h3>About me</h3>
 
-        <div class="card hide1">
+        <div class="card">
             <p>
-                I'm currently a secondary school student in Kraków, Poland. I
-                also attend an AI course at the Jagiellonian University. My
-                dream is to become a software developer.
+                My journey with programming began near the end of primary
+                school, when I created my first game using a batch (.bat)
+                script. That was when I realized that writing code is much more
+                than just typing lines of text—it’s an engaging journey that can
+                keep you absorbed for hours and bring a lot of satisfaction.
+
+                <span id="text">
+                    <br>
+                    Since then, I have been consistently developing my skills,
+                    and choosing a technical high school specializing in
+                    programming was a natural step for me. I wanted my passion
+                    to also become a strong foundation for my future career.
+                    <br>
+                    <br>
+                    I regularly publish new projects on GitHub, which motivates me
+                    to keep learning and improving my programming skills.
+
+                    <br>
+                    <br>
+                    Currently, I am a student at a technical school in Kraków, and
+                    I also attend an artificial intelligence course at the Jagiellonian
+                    University.
+                </span>
+
                 <input type="checkbox" id="toggle" hidden />
-                <label for="toggle">Read More</label>
+                <label id="read" for="toggle">Read More</label>
             </p>
         </div>
 
-        <div class="card hide2">
+        <div class="card">
             <p>
                 I'm interested in various types of programming languages C#,
                 Python and web development.
             </p>
         </div>
-
-        <div class="card blog">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                commodi sit soluta voluptatem vel hic molestias adipisci
-                officiis, veniam unde perspiciatis, quis ea inventore
-                consequatur. Velit, ullam. Ab, nemo repellat? Lorem, ipsum dolor
-                sit amet consectetur adipisicing elit. Error provident omnis
-                dolor quis, quisquam voluptatum officiis, cumque est nobis eaque
-                aut. Tempore tempora, officia quia eaque et odio dolores libero!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti, rerum repellat doloribus quam molestiae facere eveniet
-                eligendi at reprehenderit aliquid optio nesciunt, officiis
-                beatae magni impedit ea dolorum ullam quis. Lorem ipsum, dolor
-                sit amet consectetur adipisicing elit. Odit unde sequi
-                architecto ex sapiente, nostrum et repudiandae autem sint
-                provident ullam enim repellendus esse officiis aliquam deserunt
-                mollitia soluta similique!
-                <input type="checkbox" id="toggleBack" hidden />
-                <label for="toggleBack">Go back</label>
-            </p>
-        </div>
     </section>
 
     <script>
-        const toggle = document.getElementById("toggle");
-        const toggleBack = document.getElementById("toggleBack");
-        const blog = document.querySelector(".blog");
-        const card1 = document.querySelector(".hide1");
-        const card2 = document.querySelector(".hide2");
+        const checkBox = document.getElementById("toggle");
+        const text = document.getElementById("text");
+        const label = document.getElementById("read");
 
-        function showBlog() {
-            blog.style.display = "block";
-            card1.style.display = "none";
-            card2.style.display = "none";
-        }
-
-        function showCards() {
-            blog.style.display = "none";
-            card1.style.display = "block";
-            card2.style.display = "block";
-            toggle.checked = false;
-        }
-
-        toggle?.addEventListener("change", showBlog);
-        toggleBack?.addEventListener("change", showCards);
+        checkBox.addEventListener("change", () => {
+            if (checkBox.checked) {
+                label.innerHTML = "Read Less";
+                text.style.display = "block";
+            } else {
+                label.innerHTML = "Read More";
+                text.style.display = "none";
+            }
+        });
     </script>
 </Layout>
